@@ -1,0 +1,14 @@
+[package]
+name = "demand-letter"
+version = "0.1.0"
+authors = ["malcolm <malcolm.balch@gonift.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.0"
+postgres = "0.15"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates", "serve"]

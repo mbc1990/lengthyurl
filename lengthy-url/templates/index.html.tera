@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="main.css">
+<div class="header">
+   LengthyURL.com
+</div>
+<div id="lengthen_url">
+    <form action="/new_url" method="post">
+        URL:<br>
+        <input type="text" name="path"><br>
+        <input type="submit" value="Submit"><br><br>
+    </form>
+</div>
