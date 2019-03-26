@@ -4,8 +4,10 @@
 </div>
 <div id="lengthen_url">
     <form action="/new_url" method="post">
-        URL:<br>
-        <input type="text" name="path"><br>
-        <input type="submit" value="Submit"><br><br>
+        <h3>
+            URL:
+        </h3>
+        <input type="text" name="path" class="url_input"><br>
+        <input type="submit" value="Submit" class="submit_url"><br><br>
     </form>
 </div>

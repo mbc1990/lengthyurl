@@ -1,3 +1,22 @@
 .header {
-    font-family: "Times New Roman"
+    font-family: "Arial";
+    font-size: 64pt;
+    color: black;
+    width: 100%;
+    padding: 1%;
+    margin: auto;
+}
+
+.url_input {
+    padding: 5px;
+}
+
+#lengthen_url {
+    font-family: "Arial";
+    margin: auto;
+    width: 75%;
+}
+
+.submit_url {
+    margin-top: 5px;
 }
