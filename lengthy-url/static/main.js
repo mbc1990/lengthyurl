@@ -13,14 +13,11 @@ function submitURL() {
     }).then(res => {
       res.json().then(function(result) {
         // TODO: Set result div visble, populate result href with url
-        console.log ("Result: " + result["url"]);
+        if (result["valid"]) {
+            console.log ("Result: " + result["url"]);
+        } else {
+            console.log("invalid url");
+        }
       });
     });
 }
-/*
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("submit_url").addEventListener("submit", function(event){
-      event.preventDefault()
-    });
-});
-*/
