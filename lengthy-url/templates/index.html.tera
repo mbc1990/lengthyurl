@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+
 <div class="header">
    LengthyURL.com
 </div>
@@ -7,7 +9,10 @@
         <h3>
             URL:
         </h3>
-        <input type="text" name="path" class="url_input"><br>
-        <input type="submit" value="Submit" class="submit_url"><br><br>
+        <input id="url_input" type="url" name="path" class="url_input"><br>
+        <button type="button" onclick="submitURL()">Get My LengthyURL™</button>
     </form>
+    <div id="long_url_result">
+
+    </div>
 </div>
