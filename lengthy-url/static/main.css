@@ -11,6 +11,11 @@
     padding: 5px;
 }
 
+#submit_url {
+    padding: 5px;
+    margin-top: 5px;
+}
+
 #lengthen_url {
     font-family: "Arial";
     margin: auto;

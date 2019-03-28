@@ -10,7 +10,7 @@
             URL:
         </h3>
         <input id="url_input" type="url" name="path" class="url_input"><br>
-        <button type="button" onclick="submitURL()">Get My LengthyURL™</button>
+        <button id="submit_url" type="button" onclick="submitURL()">Get My LengthyURL™</button>
     </form>
     <div id="long_url_result">
         <div id="success_result">

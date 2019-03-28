@@ -71,7 +71,7 @@ fn new_url(input_url: Json<UrlRequest>, state: State<RwLock<HashMap<String, Stri
             let mut rng = thread_rng();
             let chars: String = iter::repeat(())
                 .map(|()| rng.sample(Alphanumeric))
-                .take(1024)
+                .take(5000)
                 .collect();
             println!("Generated: {:?}", &chars);
             urls.insert(chars.clone(), input_url.path.to_owned());

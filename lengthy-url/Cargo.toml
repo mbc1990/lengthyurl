@@ -1,5 +1,5 @@
 [package]
-name = "demand-letter"
+name = "lengthyurl"
 version = "0.1.0"
 authors = ["malcolm <malcolm.balch@gonift.com>"]
 edition = "2018"
