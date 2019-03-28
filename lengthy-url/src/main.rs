@@ -39,7 +39,7 @@ fn index() -> Template {
     Template::render("index", &context)
 }
 
-#[get("/l/<encoded>")]
+#[get("/tm/<encoded>")]
 fn long_url(encoded: String, state: State<RwLock<HashMap<String, String>>>) -> Redirect {
     let lock = state.inner();
     let urls = lock.read().unwrap();

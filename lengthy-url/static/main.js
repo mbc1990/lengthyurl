@@ -21,8 +21,8 @@ function submitURL() {
             good.style.visibility = "visible";
             bad.style.visibility = "hidden";
             let longUrl = document.getElementById('long_url');
-            longUrl.href = "/l/" + result["url"];
-            longUrl.textContent = "http://lengthyURL.com/l/" + result["url"];
+            longUrl.href = "/tm/" + result["url"];
+            longUrl.textContent = "http://LengthyURL.com/tm/" + result["url"];
         } else {
             console.log("invalid url");
             good.style.visibility = "hidden";

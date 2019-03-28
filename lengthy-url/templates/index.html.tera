@@ -2,20 +2,34 @@
 <script src="main.js"></script>
 
 <div class="header">
-   LengthyURL.com
+   LengthyURL.com™
 </div>
 <div id="lengthen_url">
+    <div id="marketing">
+        <h2>
+            Reasons to use LengthyURL.com™
+        </h2>
+        <p>
+            - Are your users embarrassed by puny small URLs?
+        </p>
+        <p>
+            - Did Big Small URL trick you with their lies?
+        </p>
+        <p>
+            - Has your business reached a scale where LengthyURL.com™s are a requirement?
+        </p>
+    </div>
     <form>
         <h3>
             URL:
         </h3>
         <input id="url_input" type="url" name="path" class="url_input"><br>
-        <button id="submit_url" type="button" onclick="submitURL()">Get My LengthyURL™</button>
+        <button id="submit_url" type="button" onclick="submitURL()">Get My LengthyURL.com™</button>
     </form>
     <div id="long_url_result">
         <div id="success_result">
             <h3>
-                Youre new URL:
+                Your LengthyURL.com™:
             </h3>
             <a id="long_url" href="">
                 <span id="long_url_link">
