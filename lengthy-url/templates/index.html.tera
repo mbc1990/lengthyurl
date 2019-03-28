@@ -13,6 +13,17 @@
         <button type="button" onclick="submitURL()">Get My LengthyURL™</button>
     </form>
     <div id="long_url_result">
-
+        <div id="success_result">
+            <h3>
+                Youre new URL:
+            </h3>
+            <a id="long_url" href="">
+                <span id="long_url_link">
+                </span>
+            </a>
+        </div>
+        <div id="failure_result">
+            Sorry, that's not a valid URL.
+        </idiv>
     </div>
 </div>

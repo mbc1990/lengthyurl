@@ -1,5 +1,9 @@
 
 function submitURL() {
+    let good = document.querySelector('#success_result');
+    let bad = document.querySelector('#failure_result');
+    good.style.visibility = "hidden";
+    bad.style.visibility = "hidden";
     console.log("URL submitted");
     const url = document.getElementById("url_input").value;
     const data = {path: url};
@@ -12,11 +16,17 @@ function submitURL() {
        },
     }).then(res => {
       res.json().then(function(result) {
-        // TODO: Set result div visble, populate result href with url
         if (result["valid"]) {
             console.log ("Result: " + result["url"]);
+            good.style.visibility = "visible";
+            bad.style.visibility = "hidden";
+            let longUrl = document.getElementById('long_url');
+            longUrl.href = "/l/" + result["url"];
+            longUrl.textContent = "http://lengthyURL.com/l/" + result["url"];
         } else {
             console.log("invalid url");
+            good.style.visibility = "hidden";
+            bad.style.visibility = "visible";
         }
       });
     });
